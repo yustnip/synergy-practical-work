@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Слайдер изображений</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-images"></i> Слайдер изображений</h1>
+        </header>
+
+        <main>
+            <div class="slider-container">
+                <div class="slider">
+                    <div class="slide active">
+                        <img src="https://yavuzceliker.github.io/sample-images/image-103.jpg" alt="Вид на горы">
+                        <div class="slide-caption">
+                            <h3>Вид на горы</h3>
+                            <p>Красивые горы в облаках</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="https://yavuzceliker.github.io/sample-images/image-302.jpg" alt="Цветок">
+                        <div class="slide-caption">
+                            <h3>Цветок</h3>
+                            <p>Цветок в монохромной палитре</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="https://yavuzceliker.github.io/sample-images/image-332.jpg" alt="Город">
+                        <div class="slide-caption">
+                            <h3>Город</h3>
+                            <p>Вечерний город и дорога</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="https://yavuzceliker.github.io/sample-images/image-123.jpg" alt="Компас и верёвка">
+                        <div class="slide-caption">
+                            <h3>Компас и верёвка</h3>
+                            <p>На красивом фоне компас и верёвка</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="https://yavuzceliker.github.io/sample-images/image-106.jpg" alt="Паром">
+                        <div class="slide-caption">
+                            <h3>Паром</h3>
+                            <p>Прибывает паром к причалу</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slider-controls">
+                    <button class="slider-btn prev-btn" aria-label="Предыдущее изображение">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <div class="slide-indicators">
+                        <span class="indicator active" data-index="0"></span>
+                        <span class="indicator" data-index="1"></span>
+                        <span class="indicator" data-index="2"></span>
+                        <span class="indicator" data-index="3"></span>
+                        <span class="indicator" data-index="4"></span>
+                    </div>
+                    <button class="slider-btn next-btn" aria-label="Следующее изображение">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+
+                <div class="slider-info">
+                    <p>Изображение <span class="current-slide">1</span> из <span class="total-slides">5</span></p>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
